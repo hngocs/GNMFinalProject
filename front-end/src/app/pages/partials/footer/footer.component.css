@@ -1,0 +1,113 @@
+/* Định dạng toàn bộ footer */
+.footer-container {
+    background-color: #47682C;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề chính */
+.footer-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Đường kẻ dưới tiêu đề */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/* Bố cục các cột trong footer */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Mỗi cột */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Tiêu đề của mỗi cột */
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Danh sách liên kết */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Liên hệ */
+.contact-column p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Email */
+.contact-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-column a:hover {
+    text-decoration: underline;
+}
+
+/* Icon mạng xã hội */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Google Maps */
+.footer-map {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
